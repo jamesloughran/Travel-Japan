@@ -4,12 +4,12 @@
 }
 
 .header{
-    min-height: 100vh;
+    min-height: 95vh;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.352), rgba(4,9,30,0.7)),url(./img/Kiyomizu-dera-Temple-and-cherry-blossom-season-Sakura-spring-time-in-Kyoto-Japan-_1017748333.webp);
     background-position: center;
     background-size: cover;
-    position: relative;
+    /* position: relative; */
 }
 
 nav{
@@ -83,6 +83,7 @@ nav h1{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    
 }
 
 .text-box h1{
@@ -96,6 +97,176 @@ nav h1{
 
 nav .fa{
     display: none;
+}
+
+.book-form{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: -5rem;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 1rem rgba(17,17,17,.7);
+
+    
+
+}
+
+.searchBox{
+    display: flex;
+    padding: 30px 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.searchBox .inputBox{
+    margin: 0 20px;
+}
+
+.searchBox .inputBox p{
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.searchBox .inputBox p.white{
+    color: rgb(212, 211, 211);
+}
+
+.searchBox .inputBox input{
+    border: 1px solid #222;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    min-width: 150px;
+    font-size: 1.1em;
+}
+
+.searchBox .inputBox input[type="submit"]{
+    outline: none;
+    border: none;
+    background: #f44336;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 2px;
+    padding: 13px;
+}
+
+/* form{
+    display: flex;
+    align-items: flex-end;
+    flex-wrap:wrap;
+
+        
+
+} */
+/* .inputBox{
+    flex: 1 1 20rem;
+}
+     */
+
+/* .searchBox{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgb(212, 211, 211);
+    padding: 30px 50px;
+    transform: translateY(50%);
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+}
+
+.searchBox .inputBox{
+    margin: 0 20px;
+}
+
+.searchBox .inputBox p{
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.searchBox .inputBox p.white{
+    color: rgb(212, 211, 211);
+}
+
+.searchBox .inputBox input{
+    border: 1px solid #222;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    min-width: 150px;
+    font-size: 1.1em;
+}
+
+.searchBox .inputBox input[type="submit"]{
+    outline: none;
+    border: none;
+    background: #f44336;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 2px;
+    padding: 13px;
+} */
+
+
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 5rem;
+    padding: 100px;
+    width: 80%;
+    margin: 5rem auto;
+    border: 1px;
+    border-radius: 5rem;
+    /* background-color: #222; */
+    box-shadow: 0 .5rem 1rem rgba(17,17,17,.7);
+}
+
+.about .img-container{
+    flex: 1 1 42rem;
+}
+
+.about .img-container img{
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.about .content{
+    flex: 1 1 42rem;
+    margin-bottom: 5rem;
+}
+
+.about .content span{
+    color: goldenrod;
+    font-size: 2rem;
+}
+
+.about .content h3{
+    color: black;
+    font-size: 5rem;
+    margin-top: .5rem;
+}
+
+.about .content p{
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: silver;
+    line-height: 2;
+}
+
+.btn{
+    text-decoration: none;
+    border: 1px;
+    border-radius: 5px;
+    padding: 15px 30px;
+    
+    background-color: #f44336;
+    color: white;
 }
 
 @media(max-width:700px){
@@ -148,7 +319,7 @@ nav .fa{
 
 .service{
     text-align: center;
-    padding: 50px 0;
+    padding: 150px 0 150px 0;
 }
 
 .service-head h1{
@@ -171,31 +342,31 @@ nav .fa{
 
 
 
-.about-us-box{
+/* .about-us-box{
     display: flex;
     justify-content: space-between;
     padding: 50px;
     width: 80%;
     margin: 10rem auto 0 auto;
     background-color: rgb(47, 47, 47);
-}
+} */
 
 
 
-.about-us-img img{
-    /* max-width: 900px; */
+/* .about-us-img img{
+    max-width: 900px;
     height: 600px;
     width: 100%;
-}
+} */
 
-.about-us-head{
+/* .about-us-head{
     margin-left: 0;
-    /* background-color: rgb(47, 47, 47); */
+    background-color: rgb(47, 47, 47);
     padding-top: 10px;
     
-}
+} */
 
-.about-us-head h3{
+/* .about-us-head h3{
     padding: 10px;
     color: goldenrod;
 }
@@ -211,13 +382,13 @@ nav .fa{
     color: silver;
     font-size: 20px;
     padding-bottom: 20px;
-}
+} */
 
-.btn{
-    /* padding-top: 100px; */
+/* .btn{
+    padding-top: 100px;
     
-}
-.btn a{
+} */
+/* .btn a{
     text-decoration: none;
     border: 1px;
     border-radius: 5px;
@@ -225,7 +396,7 @@ nav .fa{
     
     background-color: #f44336;
     color: white;
-}
+} */
 
 
 @media(max-width:1500px){
@@ -234,15 +405,44 @@ nav .fa{
         padding-top: 50px;
     }
     @media(max-width: 1400px){
-        .about-us-box{
+        
+    }
+    @media(max-width: 1200px){
+        .about{
             display: block;
-            /* width: 100%;
-            padding: 0; */
+            padding: 0;
+            margin-top: 5rem;
+            padding: 100px;
+            width: 56%;
+            border: 1px;
+            /* border-radius: 0; */
+            /* background-color: #222; */
+            box-shadow: 0 .5rem 1rem rgba(17,17,17,.7);
+        }
+
+        .about .img-container img{
         }
     }
     @media(max-width:900px){
         .about-us-box{
             /* padding: none; */
         }
+        /* .searchBox{
+            padding: 10px;
+        } */
+
+        .about{
+            
+            padding: 0;
+            padding-bottom: 5px;
+            width: 95%;
+            border-radius: 5px;
+            text-align: center;
+        }
+    }
+    @media(max-width:700px){
+        /* .service{
+            padding: 250px 0 0 0;
+        } */
     }
 }
