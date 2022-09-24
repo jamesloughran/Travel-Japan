@@ -146,16 +146,16 @@ nav .fa{
     }
 }
 
-.about-us{
+.service{
     text-align: center;
     padding: 50px 0;
 }
 
-.about-us-head h1{
+.service-head h1{
     font-size: 40px;
 }
 
-.about-us-head p{
+.service-head p{
     font-size: 20px;
     padding: 20px 50px;
 }
@@ -169,9 +169,80 @@ nav .fa{
     padding: 0 20px;
 }
 
+
+
+.about-us-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    width: 80%;
+    margin: 10rem auto 0 auto;
+    background-color: rgb(47, 47, 47);
+}
+
+
+
+.about-us-img img{
+    /* max-width: 900px; */
+    height: 600px;
+    width: 100%;
+}
+
+.about-us-head{
+    margin-left: 0;
+    /* background-color: rgb(47, 47, 47); */
+    padding-top: 10px;
+    
+}
+
+.about-us-head h3{
+    padding: 10px;
+    color: goldenrod;
+}
+
+.about-us-head h1{
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+.about-us-head p{
+    padding: 10px;
+    color: silver;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.btn{
+    /* padding-top: 100px; */
+    
+}
+.btn a{
+    text-decoration: none;
+    border: 1px;
+    border-radius: 5px;
+    padding: 15px 30px;
+    
+    background-color: #f44336;
+    color: white;
+}
+
+
 @media(max-width:1500px){
     .row{
         display: block;
         padding-top: 50px;
+    }
+    @media(max-width: 1400px){
+        .about-us-box{
+            display: block;
+            /* width: 100%;
+            padding: 0; */
+        }
+    }
+    @media(max-width:900px){
+        .about-us-box{
+            /* padding: none; */
+        }
     }
 }
