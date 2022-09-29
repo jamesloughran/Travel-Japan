@@ -483,6 +483,124 @@ nav .fa{
     
 } */
 
+/* banner section */
+
+.banner{
+    padding: 3rem;
+    text-align: center;
+    background: rgb(232, 231, 231);
+    margin: 50px 0 50px 0;
+}
+
+.banner .content{
+    box-shadow: 0 .5rem 1rem rgba(17,17,17,.7);
+    padding: 50px 0 50px 0;
+    background: #fff;
+}
+
+.banner .content span{
+    font-size: 2rem;
+    color: #f44336;
+}
+
+.banner .content h3{
+    font-size: 4rem;
+    color: goldenrod;
+    margin-top: 1rem;
+}
+
+.banner .content p{
+    max-width: 60rem;
+    margin: 1rem auto;
+    font-size: 1.4rem;
+    color: silver;
+    line-height: 2;
+}
+
+/* contact footer */
+
+.footer .box-container{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.footer .box-container .box{
+    padding: 1rem 0;
+    /* border: 1px solid black; */
+    /* box-shadow: 0 .5rem 1rem rgba(17,17,17,.7);
+    border-radius: 2rem; */
+}
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    color: #222;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box p{
+    font-size: 1.4rem;
+    color: rgb(126, 125, 125);
+    padding: 1rem 0;
+    /* line-height: 2; */
+}
+
+.footer .box-container .box .share{
+    /* padding-top: 1rem; */
+}
+
+.footer .box-container .box .share a{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4rem;
+    font-size: 4rem;
+    border-radius: 30%;
+    /* font-size: 1.7rem; */
+    border: 1px;
+    color: lightblue;
+    margin-right: .5rem;
+    text-align: center;
+    box-shadow: 0 .5rem 1rem rgba(17,17,17,.7);
+    padding: 0 5px 0 5px;
+}
+
+.footer .box-container .box .share a:hover{
+    background: lightblue;
+    color: white;
+}
+
+.footer .box-container .box .share img{
+    width: 50px;
+}
+
+.footer .box-container .box .links{
+    font-size: 1.4rem;
+    color: rgb(126, 126, 250);
+    padding: 1px;
+    display: block;
+    text-decoration: none;
+    
+}
+
+.footer .box-container .box .links:hover{
+    color: blue;
+    padding: .5rem;
+}
+
+.footer .box-container .box form .email{
+    /* width: 100%; */
+    border-radius: 5rem;
+    border: 1px;
+    background: none;
+    font-size: 1.5rem;
+    text-transform: none;
+    color: lightblue;
+    box-shadow: 0 .5rem 1rem rgba(17,17,17,.7);
+    padding: .5rem .2rem;
+    margin-bottom: 1rem;
+}
+
+
 @media(max-width:1930px){
     .destination .box-container{
         margin: 3rem;
@@ -520,6 +638,12 @@ nav .fa{
         }
 
         .about .img-container img{
+        }
+
+        .footer .box-container{
+            /* text-align: center; */
+            display: block;
+            margin-left: 1rem;
         }
     }
     @media(max-width:900px){
