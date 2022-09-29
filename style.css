@@ -479,9 +479,9 @@ nav .fa{
     background: #f44336;
 }
 
-.destination .box-container .box .content a:hover{
-    /* padding-left: 1rem; */
-}
+/* .destination .box-container .box .content a:hover{
+    
+} */
 
 @media(max-width:1930px){
     .destination .box-container{
