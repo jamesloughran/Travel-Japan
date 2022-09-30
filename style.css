@@ -606,7 +606,15 @@ nav .fa{
         margin: 3rem;
         gap: 1.5rem;
     }
+    
 
+    @media(max-width:1736px){
+        .about{
+            text-align: center;
+            width: 50%;
+        }
+        
+    }
 }
 
 @media(max-width:1500px){
@@ -623,6 +631,8 @@ nav .fa{
             margin-top: 2rem;
         }
 
+
+
     }
     @media(max-width: 1200px){
         .about{
@@ -635,6 +645,7 @@ nav .fa{
             /* border-radius: 0; */
             /* background-color: #222; */
             box-shadow: 0 .5rem 1rem rgba(17,17,17,.7);
+            text-align: center;
         }
 
         .about .img-container img{
@@ -656,11 +667,21 @@ nav .fa{
 
         .about{
             
-            padding: 0;
-            padding-bottom: 5px;
-            width: 95%;
-            border-radius: 5px;
+            padding: 70px;
+            /* padding-bottom: 5px; */
+            /* width: 95%; */
+            /* border-radius: 5px; */
             text-align: center;
+        }
+
+        
+
+        .about .content h3{
+            font-size: 60px;
+        }
+
+        .about .content p{
+            font-size: 20px;
         }
     }
     @media(max-width:700px){
@@ -668,4 +689,301 @@ nav .fa{
             padding: 250px 0 0 0;
         } */
     }
+}
+
+
+/* destination tokyo page */
+
+.header-tokyo{
+    min-height: 95vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.352), rgba(4,9,30,0.7)),url(./img/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg);
+    background-position: center;
+    background-size: cover;
+    /* position: relative; */
+}
+
+.text-box-tokyo{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+
+.text-box-tokyo h1{
+    font-size: 100px;
+}
+
+.text-box-tokyo p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+}
+
+.heading-tokyo{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.heading-tokyo span{
+    color: red;
+    font-size: 2rem;
+   
+}
+
+.heading-tokyo h1{
+    font-size: 4rem;
+    
+    margin-top: .5rem;
+}
+
+.book-form-tokyo{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: -5rem;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 1rem rgba(17,17,17,.7);
+    margin-bottom: 5rem;
+    
+
+}
+
+.destination-tokyo .box-container{
+    display: flex;
+    
+    margin-top: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 10rem;
+    gap: 5rem;
+    justify-content: space-around;
+}
+
+.destination-tokyo .box-container .box{
+    border-radius: 1rem;
+    overflow: hidden;
+    /* border: 1px solid black; */
+    box-shadow: 0 .5rem 1rem rgba(17,17,17,.7);
+
+}
+
+.destination-tokyo .box-container .box:hover img{
+    transform: scale(1.1);
+}
+
+.destination-tokyo .box-container .box .image{
+    height: 30rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.destination-tokyo .box-container .box .image img{
+    height: 480px;
+    width: 700px;
+    
+    object-fit: cover;
+}
+
+.destination-tokyo .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+
+.destination-tokyo .box-container .box .content h3{
+    font-size: 2rem;
+    color: red;
+}
+
+.destination-tokyo .box-container .box .content p{
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    color: silver;
+    line-height: 2;
+}
+
+.destination-tokyo .box-container .box .content a{
+    font-size: 1.7rem;
+    color: white;
+    /* border: 1px solid black; */
+    text-decoration: none;
+    padding: 2px 10px;
+    border-radius: 10px;
+    box-shadow: 0 .5rem 1rem rgba(17,17,17,.5);
+    background: #f44336;
+}
+
+@media(max-width:1400px){
+    .destination-tokyo .box-container{
+        display: block;
+        
+    }
+    .destination-tokyo .box-container .box {
+        margin-top: 2rem;
+    }
+
+    .destination-tokyo .box-container .box .image{
+        height: 30rem;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .destination-tokyo .box-container .box .image img{
+        height: 100%;
+        width: 100%;
+        
+        object-fit: cover;
+    }
+
+}
+
+/* destination osaka page*/
+
+.header-osaka{
+    min-height: 95vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.352), rgba(4,9,30,0.7)),url(./img/Osaka-Japan-at-night.jpg);
+    background-position: center;
+    background-size: cover;
+    /* position: relative; */
+}
+
+.text-box-osaka{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+
+.text-box-osaka h1{
+    font-size: 100px;
+}
+
+.text-box-osaka p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+}
+
+.heading-osaka{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.heading-osaka span{
+    color: red;
+    font-size: 2rem;
+   
+}
+
+.heading-osaka h1{
+    font-size: 4rem;
+    
+    margin-top: .5rem;
+}
+
+.book-form-osaka{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: -5rem;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 1rem rgba(17,17,17,.7);
+    margin-bottom: 5rem;
+    
+
+}
+
+.destination-osaka .box-container{
+    display: flex;
+    
+    margin-top: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 10rem;
+    gap: 5rem;
+    justify-content: space-around;
+}
+
+.destination-osaka .box-container .box{
+    border-radius: 1rem;
+    overflow: hidden;
+    /* border: 1px solid black; */
+    box-shadow: 0 .5rem 1rem rgba(17,17,17,.7);
+
+}
+
+.destination-osaka .box-container .box:hover img{
+    transform: scale(1.1);
+}
+
+.destination-osaka .box-container .box .image{
+    height: 30rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.destination-osaka .box-container .box .image img{
+    height: 480px;
+    width: 700px;
+    
+    object-fit: cover;
+}
+
+.destination-osaka .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+
+.destination-osaka .box-container .box .content h3{
+    font-size: 2rem;
+    color: red;
+}
+
+.destination-osaka .box-container .box .content p{
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    color: silver;
+    line-height: 2;
+}
+
+.destination-osaka .box-container .box .content a{
+    font-size: 1.7rem;
+    color: white;
+    /* border: 1px solid black; */
+    text-decoration: none;
+    padding: 2px 10px;
+    border-radius: 10px;
+    box-shadow: 0 .5rem 1rem rgba(17,17,17,.5);
+    background: #f44336;
+}
+
+@media(max-width:1400px){
+    .destination-osaka .box-container{
+        display: block;
+        
+    }
+    .destination-osaka .box-container .box {
+        margin-top: 2rem;
+    }
+
+    .destination-osaka .box-container .box .image{
+        height: 30rem;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .destination-osaka .box-container .box .image img{
+        height: 100%;
+        width: 100%;
+        
+        object-fit: cover;
+    }
+
 }
