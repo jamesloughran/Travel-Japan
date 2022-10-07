@@ -536,15 +536,15 @@ nav .fa{
     color: white;
     /* border: 1px solid black; */
     text-decoration: none;
-    padding: 2px 10px;
-    border-radius: 10px;
+    padding: 5px 15px;
+    border-radius: 5px;
     box-shadow: 0 .5rem 1rem rgba(17,17,17,.5);
     background: #f44336;
 }
 
-/* .destination .box-container .box .content a:hover{
-    
-} */
+.destination .box-container .box .content a:hover{
+    background: #f11808;
+}
 
 /* banner section */
 
@@ -873,10 +873,14 @@ nav .fa{
     color: white;
     /* border: 1px solid black; */
     text-decoration: none;
-    padding: 2px 10px;
-    border-radius: 10px;
+    padding: 5px 15px;
+    border-radius: 5px;
     box-shadow: 0 .5rem 1rem rgba(17,17,17,.5);
     background: #f44336;
+}
+
+.destination-tokyo .box-container .box .content a:hover{
+    background: #f11808;
 }
 
 @media(max-width:1400px){
@@ -1021,10 +1025,14 @@ nav .fa{
     color: white;
     /* border: 1px solid black; */
     text-decoration: none;
-    padding: 2px 10px;
-    border-radius: 10px;
+    padding: 5px 15px;
+    border-radius: 5px;
     box-shadow: 0 .5rem 1rem rgba(17,17,17,.5);
     background: #f44336;
+}
+
+.destination-osaka .box-container .box .content a:hover{
+    background: #f11808;
 }
 
 @media(max-width:1400px){
@@ -1169,10 +1177,14 @@ nav .fa{
     color: white;
     /* border: 1px solid black; */
     text-decoration: none;
-    padding: 2px 10px;
-    border-radius: 10px;
+    padding: 5px 15px;
+    border-radius: 5px;
     box-shadow: 0 .5rem 1rem rgba(17,17,17,.5);
     background: #f44336;
+}
+
+.destination-kyoto .box-container .box .content a:hover{
+    background: #f11808;
 }
 
 @media(max-width:1400px){
@@ -1317,10 +1329,14 @@ nav .fa{
     color: white;
     /* border: 1px solid black; */
     text-decoration: none;
-    padding: 2px 10px;
-    border-radius: 10px;
+    padding: 5px 15px;
+    border-radius: 5px;
     box-shadow: 0 .5rem 1rem rgba(17,17,17,.5);
     background: #f44336;
+}
+
+.destination-hakone .box-container .box .content a:hover{
+    background: #f11808;
 }
 
 @media(max-width:1400px){
