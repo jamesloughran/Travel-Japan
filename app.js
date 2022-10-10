@@ -1,12 +1,47 @@
-var navLinks = document.getElementById('navLinks');
+// var navLinks = document.getElementById('navLinks');
 
-function showMenu(){
-    navLinks.style.left = '0';
-}
+// function showMenu(){
+//     navLinks.style.left = '0';
+// }
 
-function hideMenu(){
-    navLinks.style.left = '-200px';
-}
+// function hideMenu(){
+//     navLinks.style.left = '-200px';
+// }
+
+
+// hamburger 1st way
+
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", ()=>{
+    hamburger.classList.toggle("active");
+    navLinks.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-links").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navLinks.classList.remove("active");
+}))
+
+
+
+// hamburger 2nd way
+
+// const hamburger = document.querySelector(".hamburger");
+// const navMenu = document.querySelector(".nav-menu");
+
+// hamburger.addEventListener("click", ()=>{
+//     hamburger.classList.toggle("active");
+//     navMenu.classList.toggle("active");
+// })
+
+// document.querySelectorAll(".nav-menu").forEach(n => n.addEventListener("click", () => {
+//     hamburger.classList.remove("active");
+//     navMenu.classList.remove("active");
+// }))
+
+
 
 // back to top btn
 
