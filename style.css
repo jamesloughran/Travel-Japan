@@ -129,6 +129,7 @@ nav h1{
 .nav-links{
     
     text-align: left;
+    
 }
 
 /* .bn-btn{
@@ -197,6 +198,27 @@ nav h1{
     background-color: white;
 }
 
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+} 
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+}
+
 @media(max-width:900px){
     .hamburger{
         display: block;
@@ -215,14 +237,15 @@ nav h1{
     .nav-links{
         
         position: absolute;
-        
-        left: -150%;
-        top: 90px;
-        gap: 0;
         background-color: #fff;
+        top: 90px;
+        left: -300%;
+        text-align: center;
+        gap: 0;
+        
         border-radius: 10px;
         box-shadow: 0 .5rem 1rem rgba(17,17,17,1);
-        text-align: center;
+        z-index: 2;
         transition: 0.3s;
     }
 
@@ -263,12 +286,13 @@ nav h1{
 }
 
 
-.text-box{
+/* .text-box{
     width: 90%;
     color: white;
     position: absolute;
     top: 50%;
     left: 50%;
+    
     transform: translate(-50%, -50%);
     text-align: center;
     
@@ -281,7 +305,7 @@ nav h1{
 .text-box p{
     margin: 10px 0 40px;
     font-size: 20px;
-}
+} */
 
 nav .fa{
     display: none;
