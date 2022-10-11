@@ -146,17 +146,20 @@ nav h1{
     position: relative;
 }
 
-.nav-links ul li::after{
+.nav-links  ul li .link::after{
     content: '';
     width: 0;
     height: 2px;
     background: #f44336;
-    /* display: block; */
+    display: block;
     margin: auto;
     transition: 0.5s;
 }
 
-.nav-links ul li:hover::after{
+
+
+
+.nav-links  ul li .link:hover::after{
     width: 100%;
 }
 
@@ -168,10 +171,15 @@ nav h1{
 
 .nav-links .bn-btn{
     border: 1px;
-    border-radius: 15px;
+    border-radius: 5px;
     padding: 5px 15px;
-    background: rgba(248, 74, 74, 0.796);
+    background: #f44336;
     color: black;
+    transition: 0.3s;
+}
+
+.nav-links .bn-btn:hover{
+    background-color: #e7c2bf;
 }
 
 .hamburger{
@@ -211,7 +219,7 @@ nav h1{
         left: -150%;
         top: 90px;
         gap: 0;
-        /* background-color: #222; */
+        background-color: #fff;
         border-radius: 10px;
         box-shadow: 0 .5rem 1rem rgba(17,17,17,1);
         text-align: center;
@@ -221,6 +229,10 @@ nav h1{
     .nav-links li{
         margin: 16px 0;
         
+    }
+
+    .nav-links ul li a{
+        color: black;
     }
 
     .nav-links.active{
@@ -878,6 +890,16 @@ nav .fa{
     /* position: relative; */
 }
 
+.header-tokyo li{
+    list-style: none;
+}
+
+.header-tokyo a{
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
 .text-box-tokyo{
     width: 90%;
     color: white;
@@ -1028,6 +1050,16 @@ nav .fa{
     background-position: center;
     background-size: cover;
     /* position: relative; */
+}
+
+.header-osaka li{
+    list-style: none;
+}
+
+.header-osaka a{
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
 }
 
 .text-box-osaka{
@@ -1182,6 +1214,16 @@ nav .fa{
     /* position: relative; */
 }
 
+.header-kyoto li{
+    list-style: none;
+}
+
+.header-kyoto a{
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
 .text-box-kyoto{
     width: 90%;
     color: white;
@@ -1332,6 +1374,16 @@ nav .fa{
     background-position: center;
     background-size: cover;
     /* position: relative; */
+}
+
+.header-hakone li{
+    list-style: none;
+}
+
+.header-hakone a{
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
 }
 
 .text-box-hakone{
