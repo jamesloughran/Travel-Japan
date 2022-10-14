@@ -264,6 +264,16 @@ nav h1{
         
     }
 
+    .nav-links .bn-btn{
+        border: 1px;
+        border-radius: 20px;
+        padding: 5px 15px;
+        border: 2px solid #f44336;
+        background: transparent;
+        color: black;
+        transition: 0.3s;
+    }
+
     /* .nav-menu{
         position: absolute;
         left: -100%;
