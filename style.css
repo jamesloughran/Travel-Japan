@@ -70,7 +70,7 @@
 .header{
     min-height: 95vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.352), rgba(4,9,30,0.7)),url(./img/Kiyomizu-dera-Temple-and-cherry-blossom-season-Sakura-spring-time-in-Kyoto-Japan-_1017748333.webp);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.352), rgba(4,9,30,0.7)),url(https://i.ibb.co/cy130jz/Kiyomizu-dera-Temple-and-cherry-blossom-season-Sakura-spring-time-in-Kyoto-Japan-1017748333.webp);
     background-position: center;
     background-size: cover;
     /* position: relative; */
