@@ -1,13 +1,3 @@
-// var navLinks = document.getElementById('navLinks');
-
-// function showMenu(){
-//     navLinks.style.left = '0';
-// }
-
-// function hideMenu(){
-//     navLinks.style.left = '-200px';
-// }
-
 
 // hamburger 1st way
 
@@ -25,21 +15,6 @@ document.querySelectorAll(".nav-links").forEach(n => n.addEventListener("click",
 }))
 
 
-
-// hamburger 2nd way
-
-// const hamburger = document.querySelector(".hamburger");
-// const navMenu = document.querySelector(".nav-menu");
-
-// hamburger.addEventListener("click", ()=>{
-//     hamburger.classList.toggle("active");
-//     navMenu.classList.toggle("active");
-// })
-
-// document.querySelectorAll(".nav-menu").forEach(n => n.addEventListener("click", () => {
-//     hamburger.classList.remove("active");
-//     navMenu.classList.remove("active");
-// }))
 
 
 
