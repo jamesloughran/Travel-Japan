@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 /* back to top btn */
 
-#back-to-top-btn{
+#back-to-top-btn {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -23,64 +23,70 @@
     transition-property: background-color, color;
     border-radius: 50px;
     border: 1px solid transparent;
+
 }
 
-#back-to-top-btn:hover, #back-to-top-btn:focus{
+#back-to-top-btn:hover,
+#back-to-top-btn:focus {
     background-color: black;
     color: white;
     border: 3px solid transparent;
 
 }
 
-.btnEntrance{
+.btnEntrance {
     animation-duration: 0.5s;
     animation-fill-mode: both;
     animation-name: btnEntrance;
 }
+
 /* zoomIn */
-@keyframes btnEntrance{
-    from{
+@keyframes btnEntrance {
+    from {
         opacity: 0;
         transform: scale3d(0.3, 0.3, 0.3);
     }
-    to{
+
+    to {
         opacity: 1;
     }
 }
 
 
-.btnExit{
+.btnExit {
     animation-duration: 0.25s;
     animation-fill-mode: both;
     animation-name: btnExit;
 }
+
 /* zoomOut */
-@keyframes btnExit{
-    from{
+@keyframes btnExit {
+    from {
         opacity: 1;
     }
-    to{
+
+    to {
         opacity: 0;
-        transform: scale3d(0.3,0.3,0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
     }
 }
 
 
 /* header */
-.header{
+.header {
     min-height: 95vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.352), rgba(4,9,30,0.7)),url(https://i.ibb.co/cy130jz/Kiyomizu-dera-Temple-and-cherry-blossom-season-Sakura-spring-time-in-Kyoto-Japan-1017748333.webp);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.352), rgba(4, 9, 30, 0.7)), url(https://i.ibb.co/cy130jz/Kiyomizu-dera-Temple-and-cherry-blossom-season-Sakura-spring-time-in-Kyoto-Japan-1017748333.webp);
     background-position: center;
     background-size: cover;
     /* position: relative; */
 }
 
-.header li{
+.header li {
     list-style: none;
 }
 
-.header a{
+.header a {
     color: #fff;
     text-decoration: none;
     font-family: sans-serif;
@@ -111,25 +117,25 @@
 
 
 
-nav{
+nav {
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
-    
-} 
 
-nav h1{
+}
+
+nav h1 {
     text-align: center;
     font-size: 25px;
     width: 100px;
     color: white;
 }
 
-.nav-links{
-    
+.nav-links {
+
     text-align: left;
-    
+
 }
 
 /* .bn-btn{
@@ -140,14 +146,14 @@ nav h1{
     color: #f44336;
 } */
 
-.nav-links ul li{
+.nav-links ul li {
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
 }
 
-.nav-links  ul li .link::after{
+.nav-links ul li .link::after {
     content: '';
     width: 0;
     height: 2px;
@@ -160,17 +166,17 @@ nav h1{
 
 
 
-.nav-links  ul li .link:hover::after{
+.nav-links ul li .link:hover::after {
     width: 100%;
 }
 
-.nav-links ul li a{
+.nav-links ul li a {
     color: white;
     text-decoration: none;
     font-size: 20px;
 }
 
-.nav-links .bn-btn{
+.nav-links .bn-btn {
     border: 1px;
     border-radius: 20px;
     padding: 5px 15px;
@@ -180,16 +186,16 @@ nav h1{
     transition: 0.3s;
 }
 
-.nav-links .bn-btn:hover{
+.nav-links .bn-btn:hover {
     background-color: #f44336;
 }
 
-.hamburger{
+.hamburger {
     display: none;
     cursor: pointer;
 }
 
-.bar{
+.bar {
     display: block;
     width: 25px;
     height: 3px;
@@ -199,72 +205,74 @@ nav h1{
     background-color: white;
 }
 
-.text-box{
+.text-box {
     width: 90%;
     color: white;
     position: absolute;
     top: 50%;
     left: 50%;
-    
+
     transform: translate(-50%, -50%);
     text-align: center;
-    
-} 
 
-.text-box h1{
+}
+
+.text-box h1 {
     font-size: 62px;
 }
 
-.text-box p{
+.text-box p {
     margin: 10px 0 40px;
     font-size: 20px;
 }
 
-@media(max-width:900px){
-    .hamburger{
+@media(max-width:900px) {
+    .hamburger {
         display: block;
     }
 
-    .hamburger.active .bar:nth-child(2){
+    .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
-    .hamburger.active .bar:nth-child(1){
+
+    .hamburger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
-    .hamburger.active .bar:nth-child(3){
+
+    .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .nav-links{
-        
+    .nav-links {
+
         position: absolute;
         background-color: #fff;
         top: 90px;
         left: -300%;
         text-align: center;
         gap: 0;
-        
+
         border-radius: 10px;
-        box-shadow: 0 .5rem 1rem rgba(17,17,17,1);
+        box-shadow: 0 .5rem 1rem rgba(17, 17, 17, 1);
         z-index: 2;
         transition: 0.3s;
     }
 
-    .nav-links li{
+    .nav-links li {
         margin: 16px 0;
-        
+
     }
 
-    .nav-links ul li a{
+    .nav-links ul li a {
         color: black;
     }
 
-    .nav-links.active{
+    .nav-links.active {
         left: 0;
-        
+
     }
 
-    .nav-links .bn-btn{
+    .nav-links .bn-btn {
         border: 1px;
         border-radius: 20px;
         padding: 5px 15px;
@@ -318,23 +326,23 @@ nav h1{
     font-size: 20px;
 } */
 
-nav .fa{
+nav .fa {
     display: none;
 }
 
-.book-form{
+.book-form {
     width: 80%;
     margin: 0 auto;
     margin-top: -5rem;
     background: #fff;
     border-radius: 1rem;
-    box-shadow: 0 .5rem 1rem rgba(17,17,17,.7);
+    box-shadow: 0 .5rem 1rem rgba(17, 17, 17, .7);
 
-    
+
 
 }
 
-.searchBox{
+.searchBox {
     display: flex;
     padding: 30px 50px;
     justify-content: center;
@@ -342,20 +350,20 @@ nav .fa{
     flex-wrap: wrap;
 }
 
-.searchBox .inputBox{
+.searchBox .inputBox {
     margin: 0 20px;
 }
 
-.searchBox .inputBox p{
+.searchBox .inputBox p {
     color: #222;
     margin-bottom: 10px;
 }
 
-.searchBox .inputBox p.white{
+.searchBox .inputBox p.white {
     color: rgb(212, 211, 211);
 }
 
-.searchBox .inputBox input{
+.searchBox .inputBox input {
     border: 1px solid #222;
     outline: none;
     padding: 10px;
@@ -364,7 +372,7 @@ nav .fa{
     font-size: 1.1em;
 }
 
-.searchBox .inputBox input[type="submit"]{
+.searchBox .inputBox input[type="submit"] {
     outline: none;
     border: none;
     background: #f44336;
@@ -434,7 +442,7 @@ nav .fa{
 
 
 
-.about{
+.about {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -447,55 +455,56 @@ nav .fa{
     border: 1px;
     border-radius: 5rem;
     /* background-color: #222; */
-    box-shadow: 0 .5rem 1rem rgba(17,17,17,.7);
+    box-shadow: 0 .5rem 1rem rgba(17, 17, 17, .7);
 }
 
-.about .img-container{
+.about .img-container {
     flex: 1 1 42rem;
 }
 
-.about .img-container img{
+.about .img-container img {
     border-radius: 1rem;
     width: 100%;
 }
 
-.about .content{
+.about .content {
     flex: 1 1 42rem;
     margin-bottom: 5rem;
 }
 
-.about .content span{
+.about .content span {
     color: goldenrod;
     font-size: 2rem;
 }
 
-.about .content h3{
+.about .content h3 {
     color: black;
     font-size: 5rem;
     margin-top: .5rem;
 }
 
-.about .content p{
+.about .content p {
     padding: 1rem 0;
     font-size: 1.4rem;
     color: silver;
     line-height: 2;
 }
 
-.btn{
+.btn {
     text-decoration: none;
     border: 1px;
     border-radius: 5px;
     padding: 15px 30px;
-    
+
     background-color: #f44336;
     color: white;
 }
 
-@media(max-width:900px){
-    .text-box h1{
+@media(max-width:900px) {
+    .text-box h1 {
         font-size: 50px;
     }
+
     /* .nav-links ul li{
         display: block;
     } */
@@ -517,7 +526,7 @@ nav .fa{
         padding: 8px 12px;
         position: relative;
     } */
-    
+
     /* .nav-links ul li::after{
         
         
@@ -540,26 +549,26 @@ nav .fa{
     } */
 }
 
-.service{
+.service {
     text-align: center;
     padding: 150px 0 150px 0;
 }
 
-.service-head h1{
+.service-head h1 {
     font-size: 40px;
 }
 
-.service-head p{
+.service-head p {
     font-size: 20px;
     padding: 20px 50px;
 }
 
-.row{
+.row {
     display: flex;
     padding: 40px 50px 0 50px;
 }
 
-.row-line{
+.row-line {
     padding: 0 20px;
 }
 
@@ -623,23 +632,23 @@ nav .fa{
 
 /* distination */
 
-.heading{
+.heading {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.heading span{
+.heading span {
     color: red;
     font-size: 2rem;
 }
 
-.heading h1{
+.heading h1 {
     font-size: 4rem;
-    
+
     margin-top: .5rem;
 }
 
-.destination .box-container{
+.destination .box-container {
     display: flex;
     margin-top: 5rem;
     margin-left: 10rem;
@@ -649,89 +658,89 @@ nav .fa{
     /* justify-content: space-between; */
 }
 
-.destination .box-container .box{
+.destination .box-container .box {
     border-radius: 1rem;
     overflow: hidden;
     /* border: 1px solid black; */
-    box-shadow: 0 .5rem 1rem rgba(17,17,17,.7);
+    box-shadow: 0 .5rem 1rem rgba(17, 17, 17, .7);
 
 }
 
-.destination .box-container .box:hover img{
+.destination .box-container .box:hover img {
     transform: scale(1.1);
 }
 
-.destination .box-container .box .image{
+.destination .box-container .box .image {
     height: 20rem;
     overflow: hidden;
     width: 100%;
 }
 
-.destination .box-container .box .image img{
+.destination .box-container .box .image img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.destination .box-container .box .content{
+.destination .box-container .box .content {
     padding: 2rem;
     text-align: center;
 }
 
-.destination .box-container .box .content h3{
+.destination .box-container .box .content h3 {
     font-size: 2rem;
     color: red;
 }
 
-.destination .box-container .box .content p{
+.destination .box-container .box .content p {
     padding: 1rem 0;
     font-size: 1.2rem;
     color: silver;
     line-height: 2;
 }
 
-.destination .box-container .box .content a{
+.destination .box-container .box .content a {
     font-size: 1.7rem;
     color: white;
     /* border: 1px solid black; */
     text-decoration: none;
     padding: 5px 15px;
     border-radius: 5px;
-    box-shadow: 0 .5rem 1rem rgba(17,17,17,.5);
+    box-shadow: 0 .5rem 1rem rgba(17, 17, 17, .5);
     background: #f44336;
 }
 
-.destination .box-container .box .content a:hover{
+.destination .box-container .box .content a:hover {
     background: #f11808;
 }
 
 /* banner section */
 
-.banner{
+.banner {
     padding: 3rem;
     text-align: center;
     background: rgb(232, 231, 231);
     margin: 50px 0 50px 0;
 }
 
-.banner .content{
-    box-shadow: 0 .5rem 1rem rgba(17,17,17,.7);
+.banner .content {
+    box-shadow: 0 .5rem 1rem rgba(17, 17, 17, .7);
     padding: 50px 0 50px 0;
     background: #fff;
 }
 
-.banner .content span{
+.banner .content span {
     font-size: 2rem;
     color: #f44336;
 }
 
-.banner .content h3{
+.banner .content h3 {
     font-size: 4rem;
     color: goldenrod;
     margin-top: 1rem;
 }
 
-.banner .content p{
+.banner .content p {
     max-width: 60rem;
     margin: 1rem auto;
     font-size: 1.4rem;
@@ -741,37 +750,37 @@ nav .fa{
 
 /* contact footer */
 
-.footer .box-container{
+.footer .box-container {
     display: flex;
     justify-content: space-around;
-    
+
 }
 
-.footer .box-container .box{
+.footer .box-container .box {
     padding: 1rem 0;
     /* border: 1px solid black; */
     /* box-shadow: 0 .5rem 1rem rgba(17,17,17,.7);
     border-radius: 2rem; */
 }
 
-.footer .box-container .box h3{
+.footer .box-container .box h3 {
     font-size: 2.2rem;
     color: #222;
     padding: 1rem 0;
 }
 
-.footer .box-container .box p{
+.footer .box-container .box p {
     font-size: 1.4rem;
     color: rgb(126, 125, 125);
     padding: 1rem 0;
     /* line-height: 2; */
 }
 
-.footer .box-container .box .share{
+.footer .box-container .box .share {
     /* padding-top: 1rem; */
 }
 
-.footer .box-container .box .share a{
+.footer .box-container .box .share a {
     height: 4.5rem;
     width: 4.5rem;
     line-height: 4rem;
@@ -782,34 +791,34 @@ nav .fa{
     color: lightblue;
     margin-right: .5rem;
     text-align: center;
-    box-shadow: 0 .5rem 1rem rgba(17,17,17,.7);
+    box-shadow: 0 .5rem 1rem rgba(17, 17, 17, .7);
     padding: 0 5px 0 5px;
 }
 
-.footer .box-container .box .share a:hover{
+.footer .box-container .box .share a:hover {
     background: lightblue;
     color: white;
 }
 
-.footer .box-container .box .share img{
+.footer .box-container .box .share img {
     width: 50px;
 }
 
-.footer .box-container .box .links{
+.footer .box-container .box .links {
     font-size: 1.4rem;
     color: rgb(126, 126, 250);
     padding: 1px;
     display: block;
     text-decoration: none;
-    
+
 }
 
-.footer .box-container .box .links:hover{
+.footer .box-container .box .links:hover {
     color: blue;
     padding: .5rem;
 }
 
-.footer .box-container .box form .email{
+.footer .box-container .box form .email {
     /* width: 100%; */
     border-radius: 5rem;
     border: 1px;
@@ -817,38 +826,40 @@ nav .fa{
     font-size: 1.5rem;
     text-transform: none;
     color: lightblue;
-    box-shadow: 0 .5rem 1rem rgba(17,17,17,.7);
+    box-shadow: 0 .5rem 1rem rgba(17, 17, 17, .7);
     padding: .5rem .2rem;
     margin-bottom: 1rem;
 }
 
 
-@media(max-width:1930px){
-    .destination .box-container{
+@media(max-width:1930px) {
+    .destination .box-container {
         margin: 3rem;
         gap: 1.5rem;
     }
-    
 
-    @media(max-width:1736px){
-        .about{
+
+    @media(max-width:1736px) {
+        .about {
             text-align: center;
             width: 50%;
         }
-        
+
     }
 }
 
-@media(max-width:1500px){
-    .row{
+@media(max-width:1500px) {
+    .row {
         display: block;
         padding-top: 50px;
     }
-    @media(max-width: 1400px){
-        .destination .box-container{
+
+    @media(max-width: 1400px) {
+        .destination .box-container {
             display: block;
-            
+
         }
+
         .destination .box-container .box {
             margin-top: 2rem;
         }
@@ -856,8 +867,9 @@ nav .fa{
 
 
     }
-    @media(max-width: 1200px){
-        .about{
+
+    @media(max-width: 1200px) {
+        .about {
             display: block;
             padding: 0;
             margin-top: 5rem;
@@ -866,29 +878,30 @@ nav .fa{
             border: 1px;
             /* border-radius: 0; */
             /* background-color: #222; */
-            box-shadow: 0 .5rem 1rem rgba(17,17,17,.7);
+            box-shadow: 0 .5rem 1rem rgba(17, 17, 17, .7);
             text-align: center;
         }
 
-        .about .img-container img{
-        }
+        .about .img-container img {}
 
-        .footer .box-container{
+        .footer .box-container {
             /* text-align: center; */
             display: block;
             margin-left: 1rem;
         }
     }
-    @media(max-width:900px){
-        .about-us-box{
+
+    @media(max-width:900px) {
+        .about-us-box {
             /* padding: none; */
         }
+
         /* .searchBox{
             padding: 10px;
         } */
 
-        .about{
-            
+        .about {
+
             padding: 70px;
             /* padding-bottom: 5px; */
             /* width: 95%; */
@@ -896,17 +909,18 @@ nav .fa{
             text-align: center;
         }
 
-        
 
-        .about .content h3{
+
+        .about .content h3 {
             font-size: 60px;
         }
 
-        .about .content p{
+        .about .content p {
             font-size: 20px;
         }
     }
-    @media(max-width:700px){
+
+    @media(max-width:700px) {
         /* .service{
             padding: 250px 0 0 0;
         } */
@@ -916,26 +930,26 @@ nav .fa{
 
 /* destination tokyo page */
 
-.header-tokyo{
+.header-tokyo {
     min-height: 95vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.352), rgba(4,9,30,0.7)),url(https://i.ibb.co/J37phZ1/Tokyo-Shibuya-Scramble-Crossing-2018-10-09.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.352), rgba(4, 9, 30, 0.7)), url(https://i.ibb.co/J37phZ1/Tokyo-Shibuya-Scramble-Crossing-2018-10-09.jpg);
     background-position: center;
     background-size: cover;
     /* position: relative; */
 }
 
-.header-tokyo li{
+.header-tokyo li {
     list-style: none;
 }
 
-.header-tokyo a{
+.header-tokyo a {
     color: #fff;
     text-decoration: none;
     font-family: sans-serif;
 }
 
-.text-box-tokyo{
+.text-box-tokyo {
     width: 90%;
     color: white;
     position: absolute;
@@ -943,50 +957,50 @@ nav .fa{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    
+
 }
 
-.text-box-tokyo h1{
+.text-box-tokyo h1 {
     font-size: 100px;
 }
 
-.text-box-tokyo p{
+.text-box-tokyo p {
     margin: 10px 0 40px;
     font-size: 20px;
 }
 
-.heading-tokyo{
+.heading-tokyo {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.heading-tokyo span{
+.heading-tokyo span {
     color: red;
     font-size: 2rem;
-   
+
 }
 
-.heading-tokyo h1{
+.heading-tokyo h1 {
     font-size: 4rem;
-    
+
     margin-top: .5rem;
 }
 
-.book-form-tokyo{
+.book-form-tokyo {
     width: 80%;
     margin: 0 auto;
     margin-top: -5rem;
     background: #fff;
     border-radius: 1rem;
-    box-shadow: 0 .5rem 1rem rgba(17,17,17,.7);
+    box-shadow: 0 .5rem 1rem rgba(17, 17, 17, .7);
     margin-bottom: 5rem;
-    
+
 
 }
 
-.destination-tokyo .box-container{
+.destination-tokyo .box-container {
     display: flex;
-    
+
     margin-top: 5rem;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -995,82 +1009,83 @@ nav .fa{
     justify-content: space-around;
 }
 
-.destination-tokyo .box-container .box{
+.destination-tokyo .box-container .box {
     border-radius: 1rem;
     overflow: hidden;
     /* border: 1px solid black; */
-    box-shadow: 0 .5rem 1rem rgba(17,17,17,.7);
+    box-shadow: 0 .5rem 1rem rgba(17, 17, 17, .7);
 
 }
 
-.destination-tokyo .box-container .box:hover img{
+.destination-tokyo .box-container .box:hover img {
     transform: scale(1.1);
 }
 
-.destination-tokyo .box-container .box .image{
+.destination-tokyo .box-container .box .image {
     height: 30rem;
     overflow: hidden;
     width: 100%;
 }
 
-.destination-tokyo .box-container .box .image img{
+.destination-tokyo .box-container .box .image img {
     height: 480px;
     width: 700px;
-    
+
     object-fit: cover;
 }
 
-.destination-tokyo .box-container .box .content{
+.destination-tokyo .box-container .box .content {
     padding: 2rem;
     text-align: center;
 }
 
-.destination-tokyo .box-container .box .content h3{
+.destination-tokyo .box-container .box .content h3 {
     font-size: 2rem;
     color: red;
 }
 
-.destination-tokyo .box-container .box .content p{
+.destination-tokyo .box-container .box .content p {
     padding: 1rem 0;
     font-size: 1.2rem;
     color: silver;
     line-height: 2;
 }
 
-.destination-tokyo .box-container .box .content a{
+.destination-tokyo .box-container .box .content a {
     font-size: 1.7rem;
     color: white;
     /* border: 1px solid black; */
     text-decoration: none;
     padding: 5px 15px;
     border-radius: 5px;
-    box-shadow: 0 .5rem 1rem rgba(17,17,17,.5);
+    box-shadow: 0 .5rem 1rem rgba(17, 17, 17, .5);
     background: #f44336;
 }
 
-.destination-tokyo .box-container .box .content a:hover{
+.destination-tokyo .box-container .box .content a:hover {
     background: #f11808;
 }
 
-@media(max-width:1400px){
-    .destination-tokyo .box-container{
+@media(max-width:1400px) {
+    .destination-tokyo .box-container {
         display: block;
-        
+
     }
+
     .destination-tokyo .box-container .box {
         margin-top: 2rem;
     }
 
-    .destination-tokyo .box-container .box .image{
+    .destination-tokyo .box-container .box .image {
         height: 30rem;
         overflow: hidden;
         width: 100%;
     }
 
-    .destination-tokyo .box-container .box .image img{
+    .destination-tokyo .box-container .box .image img {
         height: 100%;
         width: 100%;
-        
+
         object-fit: cover;
     }
 
@@ -1078,26 +1093,26 @@ nav .fa{
 
 /* destination osaka page*/
 
-.header-osaka{
+.header-osaka {
     min-height: 95vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.352), rgba(4,9,30,0.7)),url(https://i.ibb.co/hVcQ75C/Osaka-Japan-at-night.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.352), rgba(4, 9, 30, 0.7)), url(https://i.ibb.co/hVcQ75C/Osaka-Japan-at-night.jpg);
     background-position: center;
     background-size: cover;
     /* position: relative; */
 }
 
-.header-osaka li{
+.header-osaka li {
     list-style: none;
 }
 
-.header-osaka a{
+.header-osaka a {
     color: #fff;
     text-decoration: none;
     font-family: sans-serif;
 }
 
-.text-box-osaka{
+.text-box-osaka {
     width: 90%;
     color: white;
     position: absolute;
@@ -1105,50 +1120,50 @@ nav .fa{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    
+
 }
 
-.text-box-osaka h1{
+.text-box-osaka h1 {
     font-size: 100px;
 }
 
-.text-box-osaka p{
+.text-box-osaka p {
     margin: 10px 0 40px;
     font-size: 20px;
 }
 
-.heading-osaka{
+.heading-osaka {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.heading-osaka span{
+.heading-osaka span {
     color: red;
     font-size: 2rem;
-   
+
 }
 
-.heading-osaka h1{
+.heading-osaka h1 {
     font-size: 4rem;
-    
+
     margin-top: .5rem;
 }
 
-.book-form-osaka{
+.book-form-osaka {
     width: 80%;
     margin: 0 auto;
     margin-top: -5rem;
     background: #fff;
     border-radius: 1rem;
-    box-shadow: 0 .5rem 1rem rgba(17,17,17,.7);
+    box-shadow: 0 .5rem 1rem rgba(17, 17, 17, .7);
     margin-bottom: 5rem;
-    
+
 
 }
 
-.destination-osaka .box-container{
+.destination-osaka .box-container {
     display: flex;
-    
+
     margin-top: 5rem;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -1157,82 +1172,83 @@ nav .fa{
     justify-content: space-around;
 }
 
-.destination-osaka .box-container .box{
+.destination-osaka .box-container .box {
     border-radius: 1rem;
     overflow: hidden;
     /* border: 1px solid black; */
-    box-shadow: 0 .5rem 1rem rgba(17,17,17,.7);
+    box-shadow: 0 .5rem 1rem rgba(17, 17, 17, .7);
 
 }
 
-.destination-osaka .box-container .box:hover img{
+.destination-osaka .box-container .box:hover img {
     transform: scale(1.1);
 }
 
-.destination-osaka .box-container .box .image{
+.destination-osaka .box-container .box .image {
     height: 30rem;
     overflow: hidden;
     width: 100%;
 }
 
-.destination-osaka .box-container .box .image img{
+.destination-osaka .box-container .box .image img {
     height: 480px;
     width: 700px;
-    
+
     object-fit: cover;
 }
 
-.destination-osaka .box-container .box .content{
+.destination-osaka .box-container .box .content {
     padding: 2rem;
     text-align: center;
 }
 
-.destination-osaka .box-container .box .content h3{
+.destination-osaka .box-container .box .content h3 {
     font-size: 2rem;
     color: red;
 }
 
-.destination-osaka .box-container .box .content p{
+.destination-osaka .box-container .box .content p {
     padding: 1rem 0;
     font-size: 1.2rem;
     color: silver;
     line-height: 2;
 }
 
-.destination-osaka .box-container .box .content a{
+.destination-osaka .box-container .box .content a {
     font-size: 1.7rem;
     color: white;
     /* border: 1px solid black; */
     text-decoration: none;
     padding: 5px 15px;
     border-radius: 5px;
-    box-shadow: 0 .5rem 1rem rgba(17,17,17,.5);
+    box-shadow: 0 .5rem 1rem rgba(17, 17, 17, .5);
     background: #f44336;
 }
 
-.destination-osaka .box-container .box .content a:hover{
+.destination-osaka .box-container .box .content a:hover {
     background: #f11808;
 }
 
-@media(max-width:1400px){
-    .destination-osaka .box-container{
+@media(max-width:1400px) {
+    .destination-osaka .box-container {
         display: block;
-        
+
     }
+
     .destination-osaka .box-container .box {
         margin-top: 2rem;
     }
 
-    .destination-osaka .box-container .box .image{
+    .destination-osaka .box-container .box .image {
         height: 30rem;
         overflow: hidden;
         width: 100%;
     }
 
-    .destination-osaka .box-container .box .image img{
+    .destination-osaka .box-container .box .image img {
         height: 100%;
         width: 100%;
-        
+
         object-fit: cover;
     }
 
@@ -1240,26 +1256,26 @@ nav .fa{
 
 /* destination kyoto place */
 
-.header-kyoto{
+.header-kyoto {
     min-height: 95vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.352), rgba(4,9,30,0.7)),url(https://i.ibb.co/C6Vpg0N/kyoto-japan-26.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.352), rgba(4, 9, 30, 0.7)), url(https://i.ibb.co/C6Vpg0N/kyoto-japan-26.jpg);
     background-position: center;
     background-size: cover;
     /* position: relative; */
 }
 
-.header-kyoto li{
+.header-kyoto li {
     list-style: none;
 }
 
-.header-kyoto a{
+.header-kyoto a {
     color: #fff;
     text-decoration: none;
     font-family: sans-serif;
 }
 
-.text-box-kyoto{
+.text-box-kyoto {
     width: 90%;
     color: white;
     position: absolute;
@@ -1267,50 +1283,50 @@ nav .fa{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    
+
 }
 
-.text-box-kyoto h1{
+.text-box-kyoto h1 {
     font-size: 100px;
 }
 
-.text-box-kyoto p{
+.text-box-kyoto p {
     margin: 10px 0 40px;
     font-size: 20px;
 }
 
-.heading-kyoto{
+.heading-kyoto {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.heading-kyoto span{
+.heading-kyoto span {
     color: red;
     font-size: 2rem;
-   
+
 }
 
-.heading-kyoto h1{
+.heading-kyoto h1 {
     font-size: 4rem;
-    
+
     margin-top: .5rem;
 }
 
-.book-form-kyoto{
+.book-form-kyoto {
     width: 80%;
     margin: 0 auto;
     margin-top: -5rem;
     background: #fff;
     border-radius: 1rem;
-    box-shadow: 0 .5rem 1rem rgba(17,17,17,.7);
+    box-shadow: 0 .5rem 1rem rgba(17, 17, 17, .7);
     margin-bottom: 5rem;
-    
+
 
 }
 
-.destination-kyoto .box-container{
+.destination-kyoto .box-container {
     display: flex;
-    
+
     margin-top: 5rem;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -1319,82 +1335,83 @@ nav .fa{
     justify-content: space-around;
 }
 
-.destination-kyoto .box-container .box{
+.destination-kyoto .box-container .box {
     border-radius: 1rem;
     overflow: hidden;
     /* border: 1px solid black; */
-    box-shadow: 0 .5rem 1rem rgba(17,17,17,.7);
+    box-shadow: 0 .5rem 1rem rgba(17, 17, 17, .7);
 
 }
 
-.destination-kyoto .box-container .box:hover img{
+.destination-kyoto .box-container .box:hover img {
     transform: scale(1.1);
 }
 
-.destination-kyoto .box-container .box .image{
+.destination-kyoto .box-container .box .image {
     height: 30rem;
     overflow: hidden;
     width: 100%;
 }
 
-.destination-kyoto .box-container .box .image img{
+.destination-kyoto .box-container .box .image img {
     height: 480px;
     width: 700px;
-    
+
     object-fit: cover;
 }
 
-.destination-kyoto .box-container .box .content{
+.destination-kyoto .box-container .box .content {
     padding: 2rem;
     text-align: center;
 }
 
-.destination-kyoto .box-container .box .content h3{
+.destination-kyoto .box-container .box .content h3 {
     font-size: 2rem;
     color: red;
 }
 
-.destination-kyoto .box-container .box .content p{
+.destination-kyoto .box-container .box .content p {
     padding: 1rem 0;
     font-size: 1.2rem;
     color: silver;
     line-height: 2;
 }
 
-.destination-kyoto .box-container .box .content a{
+.destination-kyoto .box-container .box .content a {
     font-size: 1.7rem;
     color: white;
     /* border: 1px solid black; */
     text-decoration: none;
     padding: 5px 15px;
     border-radius: 5px;
-    box-shadow: 0 .5rem 1rem rgba(17,17,17,.5);
+    box-shadow: 0 .5rem 1rem rgba(17, 17, 17, .5);
     background: #f44336;
 }
 
-.destination-kyoto .box-container .box .content a:hover{
+.destination-kyoto .box-container .box .content a:hover {
     background: #f11808;
 }
 
-@media(max-width:1400px){
-    .destination-kyoto .box-container{
+@media(max-width:1400px) {
+    .destination-kyoto .box-container {
         display: block;
-        
+
     }
+
     .destination-kyoto .box-container .box {
         margin-top: 2rem;
     }
 
-    .destination-kyoto .box-container .box .image{
+    .destination-kyoto .box-container .box .image {
         height: 30rem;
         overflow: hidden;
         width: 100%;
     }
 
-    .destination-kyoto .box-container .box .image img{
+    .destination-kyoto .box-container .box .image img {
         height: 100%;
         width: 100%;
-        
+
         object-fit: cover;
     }
 
@@ -1402,26 +1419,26 @@ nav .fa{
 
 /* destination hakone places */
 
-.header-hakone{
+.header-hakone {
     min-height: 95vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.352), rgba(4,9,30,0.7)),url(https://i.ibb.co/0V7gF6c/keyimage-fuji-lake-ashinoko-mt-fuji-kvnfo8.webp);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.352), rgba(4, 9, 30, 0.7)), url(https://i.ibb.co/0V7gF6c/keyimage-fuji-lake-ashinoko-mt-fuji-kvnfo8.webp);
     background-position: center;
     background-size: cover;
     /* position: relative; */
 }
 
-.header-hakone li{
+.header-hakone li {
     list-style: none;
 }
 
-.header-hakone a{
+.header-hakone a {
     color: #fff;
     text-decoration: none;
     font-family: sans-serif;
 }
 
-.text-box-hakone{
+.text-box-hakone {
     width: 90%;
     color: white;
     position: absolute;
@@ -1429,50 +1446,50 @@ nav .fa{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    
+
 }
 
-.text-box-hakone h1{
+.text-box-hakone h1 {
     font-size: 100px;
 }
 
-.text-box-hakone p{
+.text-box-hakone p {
     margin: 10px 0 40px;
     font-size: 20px;
 }
 
-.heading-hakone{
+.heading-hakone {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.heading-hakone span{
+.heading-hakone span {
     color: red;
     font-size: 2rem;
-   
+
 }
 
-.heading-hakone h1{
+.heading-hakone h1 {
     font-size: 4rem;
-    
+
     margin-top: .5rem;
 }
 
-.book-form-hakone{
+.book-form-hakone {
     width: 80%;
     margin: 0 auto;
     margin-top: -5rem;
     background: #fff;
     border-radius: 1rem;
-    box-shadow: 0 .5rem 1rem rgba(17,17,17,.7);
+    box-shadow: 0 .5rem 1rem rgba(17, 17, 17, .7);
     margin-bottom: 5rem;
-    
+
 
 }
 
-.destination-hakone .box-container{
+.destination-hakone .box-container {
     display: flex;
-    
+
     margin-top: 5rem;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -1481,82 +1498,83 @@ nav .fa{
     justify-content: space-around;
 }
 
-.destination-hakone .box-container .box{
+.destination-hakone .box-container .box {
     border-radius: 1rem;
     overflow: hidden;
     /* border: 1px solid black; */
-    box-shadow: 0 .5rem 1rem rgba(17,17,17,.7);
+    box-shadow: 0 .5rem 1rem rgba(17, 17, 17, .7);
 
 }
 
-.destination-hakone .box-container .box:hover img{
+.destination-hakone .box-container .box:hover img {
     transform: scale(1.1);
 }
 
-.destination-hakone .box-container .box .image{
+.destination-hakone .box-container .box .image {
     height: 30rem;
     overflow: hidden;
     width: 100%;
 }
 
-.destination-hakone .box-container .box .image img{
+.destination-hakone .box-container .box .image img {
     height: 480px;
     width: 700px;
-    
+
     object-fit: cover;
 }
 
-.destination-hakone .box-container .box .content{
+.destination-hakone .box-container .box .content {
     padding: 2rem;
     text-align: center;
 }
 
-.destination-hakone .box-container .box .content h3{
+.destination-hakone .box-container .box .content h3 {
     font-size: 2rem;
     color: red;
 }
 
-.destination-hakone .box-container .box .content p{
+.destination-hakone .box-container .box .content p {
     padding: 1rem 0;
     font-size: 1.2rem;
     color: silver;
     line-height: 2;
 }
 
-.destination-hakone .box-container .box .content a{
+.destination-hakone .box-container .box .content a {
     font-size: 1.7rem;
     color: white;
     /* border: 1px solid black; */
     text-decoration: none;
     padding: 5px 15px;
     border-radius: 5px;
-    box-shadow: 0 .5rem 1rem rgba(17,17,17,.5);
+    box-shadow: 0 .5rem 1rem rgba(17, 17, 17, .5);
     background: #f44336;
 }
 
-.destination-hakone .box-container .box .content a:hover{
+.destination-hakone .box-container .box .content a:hover {
     background: #f11808;
 }
 
-@media(max-width:1400px){
-    .destination-hakone .box-container{
+@media(max-width:1400px) {
+    .destination-hakone .box-container {
         display: block;
-        
+
     }
+
     .destination-hakone .box-container .box {
         margin-top: 2rem;
     }
 
-    .destination-hakone .box-container .box .image{
+    .destination-hakone .box-container .box .image {
         height: 30rem;
         overflow: hidden;
         width: 100%;
     }
 
-    .destination-hakone .box-container .box .image img{
+    .destination-hakone .box-container .box .image img {
         height: 100%;
         width: 100%;
-        
+
         object-fit: cover;
     }
 
